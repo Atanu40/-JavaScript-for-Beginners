@@ -56,3 +56,11 @@ function myMove() {
 
 //myMove();
 
+//----------------------------- DOM EVENTS ---------------------------------//
+function upperCase(){
+    let x = document.getElementById("name");
+    x.value = x.value.toUpperCase();
+
+  
+   
+}
