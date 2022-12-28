@@ -64,3 +64,45 @@ function upperCase(){
   
    
 }
+
+//------------------------------- DOM Navigation --------------------------//
+
+/*
+
+parentNode
+childNodes[nodenumber]
+firstChild
+lastChild
+nextSibling
+previousSibling
+
+
+*/
+
+
+const v = document.getElementById("demo1").firstChild.nodeValue;
+console.log(v);
+
+//----------------------------------- DOM NODES ------------------------------//
+
+//Creating New HTML Elements (Nodes)//
+
+const para = document.createElement("p"); // element create //
+const text = document.createTextNode("HELLO WORLD"); // text node create//
+
+para.appendChild(text); // paragraph tag er vitor text add korlam //
+
+const element = document.getElementById("div1"); // div identify //
+
+const para1 = document.getElementById("p1");
+
+const para2 = document.getElementById("p2");
+
+element.appendChild(para); // div er vitor paragraph tag add korlam //
+
+element.insertBefore(para,para1);
+
+para2.remove();
+
+
+
